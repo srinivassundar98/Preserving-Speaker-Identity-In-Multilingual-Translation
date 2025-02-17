@@ -1,0 +1,192 @@
+---
+title: "Performance of Fine Tuned Models"
+author: "Srinivas Sundar"
+date: "2025-02-16"
+format: html
+jupyter: python3
+---
+```{python}
+!pip install librosa soundfile
+```
+
+
+```{python}
+import pandas as pd
+import numpy as np
+```
+
+```{python}
+df_whisper=pd.read_csv('whisper_ft_results.csv')
+df_marian=pd.read_csv('marian_ft_results.csv')
+```
+
+```{python}
+df_improved_whisper_cer = df_whisper[(df_whisper["cer_base"] > df_whisper["cer_ft"])]
+print("Number of samples improved:", len(df_improved_whisper_cer))
+# Display the top rows
+display_columns = ["sample_idx", "reference", "base_pred", "ft_pred", "cer_base", "cer_ft"]
+df_improved_whisper_cer[display_columns].head(10)
+# but fine-tuned model got it perfect (WER=0)
+df_improved_whisper_wer = df_whisper[(df_whisper["wer_base"] > df_whisper["wer_ft"])]
+print("Number of samples improved:", len(df_improved_whisper_wer))
+# Display the top rows
+display_columns = ["sample_idx", "reference", "base_pred", "ft_pred", "wer_base", "wer_ft"]
+df_improved_whisper_wer[display_columns].head(10)
+```
+
+```{python}
+df_perfect_whisper_cer = df_whisper[(df_whisper["cer_base"] > df_whisper["cer_ft"]) & (df_improved_whisper_cer["cer_ft"]==0)]
+print("Number of samples improved:", len(df_perfect_whisper_cer))
+# Display the top rows
+display_columns = ["sample_idx", "reference", "base_pred", "ft_pred", "cer_base", "cer_ft"]
+df_perfect_whisper_cer[display_columns].head(10)
+# but fine-tuned model got it perfect (WER=0)
+df_perfect_whisper_wer = df_whisper[(df_whisper["wer_base"] > df_whisper["wer_ft"]) & (df_improved_whisper_cer["wer_ft"]==0)]
+print("Number of samples improved:", len(df_perfect_whisper_wer))
+# Display the top rows
+display_columns = ["sample_idx", "reference", "base_pred", "ft_pred", "wer_base", "wer_ft"]
+df_perfect_whisper_wer[display_columns].head(10)
+```
+
+```{python}
+df_improved_marian = df_marian[df_marian["bleu_ft"] > df_marian["bleu_base"]]
+print("Number of samples improved:", len(df_improved_marian))
+
+# Show the top 10 improved examples
+df_improved_marian[["sample_idx", "src_text", "reference_fr", "base_pred", "ft_pred", "bleu_base", "bleu_ft"]].head(10)
+```
+
+```{python}
+df_perfect_marian = df_marian[(df_marian["bleu_ft"] > df_marian["bleu_base"]) & (np.isclose(df_marian["bleu_ft"], 100.0, atol=1e-7))]
+print("Number of samples improved:", len(df_perfect_marian))
+
+# Show the top 10 improved examples
+df_perfect_marian[["sample_idx", "src_text", "reference_fr", "base_pred", "ft_pred", "bleu_base", "bleu_ft"]].head(10)
+```
+
+```{python}
+import tempfile
+import zipfile
+import os
+from datasets import load_from_disk
+
+zip_path = "small_validation_set.zip"
+
+# Create a temporary directory
+tmpdirname = tempfile.mkdtemp()
+with zipfile.ZipFile(zip_path, "r") as zip_ref:
+    zip_ref.extractall(tmpdirname)
+
+dataset_path = os.path.join(tmpdirname, "small_validation_set")
+small_validation_set = load_from_disk(dataset_path)
+
+print("Loaded small_validation_set with", len(small_validation_set), "samples.")
+```
+
+```{python}
+import difflib
+from IPython.display import Audio, display, HTML
+
+def highlight_diff(ref, pred):
+    """
+    Use difflib.HtmlDiff to highlight token-level differences
+    side by side in an HTML table.
+    """
+    ref_tokens = ref.split()
+    pred_tokens = pred.split()
+    diff_html = difflib.HtmlDiff().make_table(
+        ref_tokens,
+        pred_tokens,
+        fromdesc='Reference',
+        todesc='Prediction',
+        context=True,
+        numlines=1
+    )
+    return diff_html
+
+def show_whisper_sample(df, dataset, row_idx=0):
+    """
+    Display audio playback and text differences for a single row in `df`.
+    `dataset` is your loaded small_validation_set (a Dataset object).
+    """
+    if row_idx >= len(df):
+        print("Row index out of range.")
+        return
+
+    row = df.iloc[row_idx]
+    
+    # Convert to a pure Python int, since HF Datasets won't accept np.int64
+    sample_idx = int(row["sample_idx"])
+
+    # Retrieve the audio from the dataset
+    sample = dataset[sample_idx]
+    audio_data = sample["audio"]["array"]
+
+    # Playback the audio (assuming 16k sample rate)
+    display(Audio(audio_data, rate=16000))
+
+    print(f"Sample index: {sample_idx}")
+    print("Reference:", row["reference"])
+    print("Base Prediction:", row["base_pred"])
+    print("Fine-tuned Prediction:", row["ft_pred"])
+    print(f"CER Base: {row['cer_base']:.3f}, CER FT: {row['cer_ft']:.3f}")
+    print(f"WER Base: {row['wer_base']:.3f}, WER FT: {row['wer_ft']:.3f}")
+
+    # Highlight diffs side-by-side
+    base_diff_html = highlight_diff(row["reference"], row["base_pred"])
+    ft_diff_html   = highlight_diff(row["reference"], row["ft_pred"])
+
+    display(HTML("<h4>Reference vs. Base Prediction</h4>" + base_diff_html))
+    display(HTML("<h4>Reference vs. Fine-Tuned Prediction</h4>" + ft_diff_html))
+```
+
+```{python}
+df_perfect_whisper_wer
+```
+
+```{python}
+for i in range(0,len(df_perfect_whisper_wer)):
+    show_whisper_sample(df_perfect_whisper_wer, small_validation_set, row_idx=i)
+```
+
+```{python}
+def highlight_diff_tokens(s1, s2):
+    """
+    Return an HTML diff table showing token-level differences between s1 and s2.
+    """
+    tokens1 = s1.split()
+    tokens2 = s2.split()
+    diff_html = difflib.HtmlDiff().make_table(
+        tokens1, tokens2,
+        fromdesc='String 1',
+        todesc='String 2',
+        context=True,
+        numlines=1
+    )
+    return diff_html
+
+def show_marian_sample(df, row_idx=0):
+    if row_idx >= len(df):
+        print("Row index out of range.")
+        return
+    
+    row = df.iloc[row_idx]
+    print(f"Sample index: {row['sample_idx']}")
+    print("Source (EN)     :", row["src_text"])
+    print("Reference (FR)  :", row["reference_fr"])
+    print("Base Prediction :", row["base_pred"])
+    print("Fine-tuned Pred :", row["ft_pred"])
+    print(f"BLEU Base: {row['bleu_base']:.2f}, BLEU FT: {row['bleu_ft']:.2f}")
+
+    # Compare reference vs base
+    base_diff_html = highlight_diff_tokens(row["reference_fr"], row["base_pred"])
+    ft_diff_html   = highlight_diff_tokens(row["reference_fr"], row["ft_pred"])
+
+    display(HTML("<h4>Reference vs. Base Prediction</h4>" + base_diff_html))
+    display(HTML("<h4>Reference vs. Fine-Tuned Prediction</h4>" + ft_diff_html))
+```
+
+```{python}
+show_marian_sample(df_perfect_marian, row_idx=0)
+```
+
