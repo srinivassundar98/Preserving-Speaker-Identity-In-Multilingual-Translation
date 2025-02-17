@@ -9,7 +9,7 @@
 <meta name="author" content="Srinivas Sundar">
 <meta name="dcterms.date" content="2025-02-16">
 
-<title>Performance of Fine Tuned Models</title>
+<title>Performance of Fine Tuned Models – My Quarto Site</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -59,16 +59,49 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="index_files/libs/clipboard/clipboard.min.js"></script>
-<script src="index_files/libs/quarto-html/quarto.js"></script>
-<script src="index_files/libs/quarto-html/popper.min.js"></script>
-<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="index_files/libs/quarto-html/anchor.min.js"></script>
-<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="index_files/libs/bootstrap/bootstrap-8a79a254b8e706d3c925cde0a310d4f0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-d4be639c637f3db3c684c66cefad7e0c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
 
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
@@ -76,10 +109,40 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="fullcontent">
+<body class="nav-fixed fullcontent">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">My Quarto Site</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -113,10 +176,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div id="3c8f8548" class="cell" data-execution_count="1">
+<div id="ca3e053d" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install librosa soundfile</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Defaulting to user installation because normal site-packages is not writeable</code></pre>
+<pre><code>Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: librosa in c:\users\srinivas\appdata\roaming\python\python38\site-packages (0.10.2.post1)
+Requirement already satisfied: soundfile in c:\users\srinivas\appdata\roaming\python\python38\site-packages (0.13.1)
+Requirement already satisfied: audioread&gt;=2.1.9 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from librosa) (3.0.1)
+Requirement already satisfied: numpy!=1.22.0,!=1.22.1,!=1.22.2,&gt;=1.20.3 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from librosa) (1.22.3)
+Requirement already satisfied: scipy&gt;=1.2.0 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from librosa) (1.10.1)
+Requirement already satisfied: scikit-learn&gt;=0.20.0 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from librosa) (1.3.2)
+Requirement already satisfied: joblib&gt;=0.14 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from librosa) (1.3.2)
+Requirement already satisfied: decorator&gt;=4.3.0 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from librosa) (5.1.1)
+Requirement already satisfied: numba&gt;=0.51.0 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from librosa) (0.56.0)
+Requirement already satisfied: pooch&gt;=1.1 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from librosa) (1.8.2)
+Requirement already satisfied: soxr&gt;=0.3.2 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from librosa) (0.3.7)
+Requirement already satisfied: typing-extensions&gt;=4.1.1 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from librosa) (4.12.2)
+Requirement already satisfied: lazy-loader&gt;=0.1 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from librosa) (0.4)
+Requirement already satisfied: msgpack&gt;=1.0 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from librosa) (1.1.0)
+Requirement already satisfied: cffi&gt;=1.0 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from soundfile) (1.15.0)
+Requirement already satisfied: pycparser in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from cffi&gt;=1.0-&gt;soundfile) (2.21)
+Requirement already satisfied: packaging in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from lazy-loader&gt;=0.1-&gt;librosa) (21.3)
+Requirement already satisfied: llvmlite&lt;0.40,&gt;=0.39.0dev0 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from numba&gt;=0.51.0-&gt;librosa) (0.39.0)
+Requirement already satisfied: setuptools in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from numba&gt;=0.51.0-&gt;librosa) (75.3.0)
+Requirement already satisfied: importlib-metadata in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from numba&gt;=0.51.0-&gt;librosa) (4.11.3)
+Requirement already satisfied: platformdirs&gt;=2.5.0 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from pooch&gt;=1.1-&gt;librosa) (3.11.0)
+Requirement already satisfied: requests&gt;=2.19.0 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from pooch&gt;=1.1-&gt;librosa) (2.32.3)
+Requirement already satisfied: threadpoolctl&gt;=2.0.0 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from scikit-learn&gt;=0.20.0-&gt;librosa) (3.1.0)
+Requirement already satisfied: pyparsing!=3.0.5,&gt;=2.0.2 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from packaging-&gt;lazy-loader&gt;=0.1-&gt;librosa) (3.0.7)
+Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from requests&gt;=2.19.0-&gt;pooch&gt;=1.1-&gt;librosa) (2.0.12)
+Requirement already satisfied: idna&lt;4,&gt;=2.5 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from requests&gt;=2.19.0-&gt;pooch&gt;=1.1-&gt;librosa) (2.10)
+Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from requests&gt;=2.19.0-&gt;pooch&gt;=1.1-&gt;librosa) (1.26.9)
+Requirement already satisfied: certifi&gt;=2017.4.17 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from requests&gt;=2.19.0-&gt;pooch&gt;=1.1-&gt;librosa) (2024.2.2)
+Requirement already satisfied: zipp&gt;=0.5 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from importlib-metadata-&gt;numba&gt;=0.51.0-&gt;librosa) (3.8.0)</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
@@ -138,77 +230,27 @@ WARNING: Ignoring invalid distribution -rotobuf (c:\users\srinivas\appdata\roami
 [notice] A new release of pip is available: 24.3.1 -&gt; 25.0.1
 [notice] To update, run: python.exe -m pip install --upgrade pip</code></pre>
 </div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-Collecting librosa
-  Downloading librosa-0.10.2.post1-py3-none-any.whl.metadata (8.6 kB)
-Collecting soundfile
-  Downloading soundfile-0.13.1-py2.py3-none-win_amd64.whl.metadata (16 kB)
-Collecting audioread&gt;=2.1.9 (from librosa)
-  Downloading audioread-3.0.1-py3-none-any.whl.metadata (8.4 kB)
-Requirement already satisfied: numpy!=1.22.0,!=1.22.1,!=1.22.2,&gt;=1.20.3 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from librosa) (1.22.3)
-Requirement already satisfied: scipy&gt;=1.2.0 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from librosa) (1.10.1)
-Requirement already satisfied: scikit-learn&gt;=0.20.0 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from librosa) (1.3.2)
-Requirement already satisfied: joblib&gt;=0.14 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from librosa) (1.3.2)
-Requirement already satisfied: decorator&gt;=4.3.0 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from librosa) (5.1.1)
-Requirement already satisfied: numba&gt;=0.51.0 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from librosa) (0.56.0)
-Collecting pooch&gt;=1.1 (from librosa)
-  Downloading pooch-1.8.2-py3-none-any.whl.metadata (10 kB)
-Collecting soxr&gt;=0.3.2 (from librosa)
-  Downloading soxr-0.3.7-cp38-cp38-win_amd64.whl.metadata (5.7 kB)
-Requirement already satisfied: typing-extensions&gt;=4.1.1 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from librosa) (4.12.2)
-Collecting lazy-loader&gt;=0.1 (from librosa)
-  Downloading lazy_loader-0.4-py3-none-any.whl.metadata (7.6 kB)
-Collecting msgpack&gt;=1.0 (from librosa)
-  Downloading msgpack-1.1.0-cp38-cp38-win_amd64.whl.metadata (8.6 kB)
-Requirement already satisfied: cffi&gt;=1.0 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from soundfile) (1.15.0)
-Requirement already satisfied: pycparser in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from cffi&gt;=1.0-&gt;soundfile) (2.21)
-Requirement already satisfied: packaging in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from lazy-loader&gt;=0.1-&gt;librosa) (21.3)
-Requirement already satisfied: llvmlite&lt;0.40,&gt;=0.39.0dev0 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from numba&gt;=0.51.0-&gt;librosa) (0.39.0)
-Requirement already satisfied: setuptools in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from numba&gt;=0.51.0-&gt;librosa) (75.3.0)
-Requirement already satisfied: importlib-metadata in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from numba&gt;=0.51.0-&gt;librosa) (4.11.3)
-Requirement already satisfied: platformdirs&gt;=2.5.0 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from pooch&gt;=1.1-&gt;librosa) (3.11.0)
-Requirement already satisfied: requests&gt;=2.19.0 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from pooch&gt;=1.1-&gt;librosa) (2.32.3)
-Requirement already satisfied: threadpoolctl&gt;=2.0.0 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from scikit-learn&gt;=0.20.0-&gt;librosa) (3.1.0)
-Requirement already satisfied: pyparsing!=3.0.5,&gt;=2.0.2 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from packaging-&gt;lazy-loader&gt;=0.1-&gt;librosa) (3.0.7)
-Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from requests&gt;=2.19.0-&gt;pooch&gt;=1.1-&gt;librosa) (2.0.12)
-Requirement already satisfied: idna&lt;4,&gt;=2.5 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from requests&gt;=2.19.0-&gt;pooch&gt;=1.1-&gt;librosa) (2.10)
-Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from requests&gt;=2.19.0-&gt;pooch&gt;=1.1-&gt;librosa) (1.26.9)
-Requirement already satisfied: certifi&gt;=2017.4.17 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from requests&gt;=2.19.0-&gt;pooch&gt;=1.1-&gt;librosa) (2024.2.2)
-Requirement already satisfied: zipp&gt;=0.5 in c:\users\srinivas\appdata\roaming\python\python38\site-packages (from importlib-metadata-&gt;numba&gt;=0.51.0-&gt;librosa) (3.8.0)
-Downloading librosa-0.10.2.post1-py3-none-any.whl (260 kB)
-Downloading soundfile-0.13.1-py2.py3-none-win_amd64.whl (1.0 MB)
-   ---------------------------------------- 0.0/1.0 MB ? eta -:--:--
-   ---------------------------------------- 1.0/1.0 MB 12.2 MB/s eta 0:00:00
-Downloading audioread-3.0.1-py3-none-any.whl (23 kB)
-Downloading lazy_loader-0.4-py3-none-any.whl (12 kB)
-Downloading msgpack-1.1.0-cp38-cp38-win_amd64.whl (74 kB)
-Downloading pooch-1.8.2-py3-none-any.whl (64 kB)
-Downloading soxr-0.3.7-cp38-cp38-win_amd64.whl (184 kB)
-Installing collected packages: soxr, msgpack, audioread, soundfile, pooch, lazy-loader, librosa
-Successfully installed audioread-3.0.1 lazy-loader-0.4 librosa-0.10.2.post1 msgpack-1.1.0 pooch-1.8.2 soundfile-0.13.1 soxr-0.3.7</code></pre>
 </div>
+<div id="95a0bd98" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="75194546" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="68e6f30b" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df_whisper<span class="op">=</span>pd.read_csv(<span class="st">'whisper_ft_results.csv'</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>df_marian<span class="op">=</span>pd.read_csv(<span class="st">'marian_ft_results.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="8b17d3dd" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>df_whisper<span class="op">=</span>pd.read_csv(<span class="st">'whisper_ft_results.csv'</span>)</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>df_marian<span class="op">=</span>pd.read_csv(<span class="st">'marian_ft_results.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="853247f2" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>df_improved_whisper_cer <span class="op">=</span> df_whisper[(df_whisper[<span class="st">"cer_base"</span>] <span class="op">&gt;</span> df_whisper[<span class="st">"cer_ft"</span>])]</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Number of samples improved:"</span>, <span class="bu">len</span>(df_improved_whisper_cer))</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the top rows</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>display_columns <span class="op">=</span> [<span class="st">"sample_idx"</span>, <span class="st">"reference"</span>, <span class="st">"base_pred"</span>, <span class="st">"ft_pred"</span>, <span class="st">"cer_base"</span>, <span class="st">"cer_ft"</span>]</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>df_improved_whisper_cer[display_columns].head(<span class="dv">10</span>)</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co"># but fine-tuned model got it perfect (WER=0)</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>df_improved_whisper_wer <span class="op">=</span> df_whisper[(df_whisper[<span class="st">"wer_base"</span>] <span class="op">&gt;</span> df_whisper[<span class="st">"wer_ft"</span>])]</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Number of samples improved:"</span>, <span class="bu">len</span>(df_improved_whisper_wer))</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the top rows</span></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>display_columns <span class="op">=</span> [<span class="st">"sample_idx"</span>, <span class="st">"reference"</span>, <span class="st">"base_pred"</span>, <span class="st">"ft_pred"</span>, <span class="st">"wer_base"</span>, <span class="st">"wer_ft"</span>]</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>df_improved_whisper_wer[display_columns].head(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="76e828b5" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>df_improved_whisper_cer <span class="op">=</span> df_whisper[(df_whisper[<span class="st">"cer_base"</span>] <span class="op">&gt;</span> df_whisper[<span class="st">"cer_ft"</span>])]</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Number of samples improved:"</span>, <span class="bu">len</span>(df_improved_whisper_cer))</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the top rows</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>display_columns <span class="op">=</span> [<span class="st">"sample_idx"</span>, <span class="st">"reference"</span>, <span class="st">"base_pred"</span>, <span class="st">"ft_pred"</span>, <span class="st">"cer_base"</span>, <span class="st">"cer_ft"</span>]</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>df_improved_whisper_cer[display_columns].head(<span class="dv">10</span>)</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co"># but fine-tuned model got it perfect (WER=0)</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>df_improved_whisper_wer <span class="op">=</span> df_whisper[(df_whisper[<span class="st">"wer_base"</span>] <span class="op">&gt;</span> df_whisper[<span class="st">"wer_ft"</span>])]</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Number of samples improved:"</span>, <span class="bu">len</span>(df_improved_whisper_wer))</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the top rows</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>display_columns <span class="op">=</span> [<span class="st">"sample_idx"</span>, <span class="st">"reference"</span>, <span class="st">"base_pred"</span>, <span class="st">"ft_pred"</span>, <span class="st">"wer_base"</span>, <span class="st">"wer_ft"</span>]</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>df_improved_whisper_wer[display_columns].head(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Number of samples improved: 57
 Number of samples improved: 60</code></pre>
@@ -326,18 +368,18 @@ Number of samples improved: 60</code></pre>
 </div>
 </div>
 </div>
-<div id="0f9cb4f2" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>df_perfect_whisper_cer <span class="op">=</span> df_whisper[(df_whisper[<span class="st">"cer_base"</span>] <span class="op">&gt;</span> df_whisper[<span class="st">"cer_ft"</span>]) <span class="op">&amp;</span> (df_improved_whisper_cer[<span class="st">"cer_ft"</span>]<span class="op">==</span><span class="dv">0</span>)]</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Number of samples improved:"</span>, <span class="bu">len</span>(df_perfect_whisper_cer))</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the top rows</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>display_columns <span class="op">=</span> [<span class="st">"sample_idx"</span>, <span class="st">"reference"</span>, <span class="st">"base_pred"</span>, <span class="st">"ft_pred"</span>, <span class="st">"cer_base"</span>, <span class="st">"cer_ft"</span>]</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>df_perfect_whisper_cer[display_columns].head(<span class="dv">10</span>)</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="co"># but fine-tuned model got it perfect (WER=0)</span></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>df_perfect_whisper_wer <span class="op">=</span> df_whisper[(df_whisper[<span class="st">"wer_base"</span>] <span class="op">&gt;</span> df_whisper[<span class="st">"wer_ft"</span>]) <span class="op">&amp;</span> (df_improved_whisper_cer[<span class="st">"wer_ft"</span>]<span class="op">==</span><span class="dv">0</span>)]</span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Number of samples improved:"</span>, <span class="bu">len</span>(df_perfect_whisper_wer))</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the top rows</span></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>display_columns <span class="op">=</span> [<span class="st">"sample_idx"</span>, <span class="st">"reference"</span>, <span class="st">"base_pred"</span>, <span class="st">"ft_pred"</span>, <span class="st">"wer_base"</span>, <span class="st">"wer_ft"</span>]</span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>df_perfect_whisper_wer[display_columns].head(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="a1a852d5" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df_perfect_whisper_cer <span class="op">=</span> df_whisper[(df_whisper[<span class="st">"cer_base"</span>] <span class="op">&gt;</span> df_whisper[<span class="st">"cer_ft"</span>]) <span class="op">&amp;</span> (df_improved_whisper_cer[<span class="st">"cer_ft"</span>]<span class="op">==</span><span class="dv">0</span>)]</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Number of samples improved:"</span>, <span class="bu">len</span>(df_perfect_whisper_cer))</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the top rows</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>display_columns <span class="op">=</span> [<span class="st">"sample_idx"</span>, <span class="st">"reference"</span>, <span class="st">"base_pred"</span>, <span class="st">"ft_pred"</span>, <span class="st">"cer_base"</span>, <span class="st">"cer_ft"</span>]</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>df_perfect_whisper_cer[display_columns].head(<span class="dv">10</span>)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co"># but fine-tuned model got it perfect (WER=0)</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>df_perfect_whisper_wer <span class="op">=</span> df_whisper[(df_whisper[<span class="st">"wer_base"</span>] <span class="op">&gt;</span> df_whisper[<span class="st">"wer_ft"</span>]) <span class="op">&amp;</span> (df_improved_whisper_cer[<span class="st">"wer_ft"</span>]<span class="op">==</span><span class="dv">0</span>)]</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Number of samples improved:"</span>, <span class="bu">len</span>(df_perfect_whisper_wer))</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the top rows</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>display_columns <span class="op">=</span> [<span class="st">"sample_idx"</span>, <span class="st">"reference"</span>, <span class="st">"base_pred"</span>, <span class="st">"ft_pred"</span>, <span class="st">"wer_base"</span>, <span class="st">"wer_ft"</span>]</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>df_perfect_whisper_wer[display_columns].head(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Number of samples improved: 3
 Number of samples improved: 3</code></pre>
@@ -392,12 +434,12 @@ Number of samples improved: 3</code></pre>
 </div>
 </div>
 </div>
-<div id="32b821f0" class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>df_improved_marian <span class="op">=</span> df_marian[df_marian[<span class="st">"bleu_ft"</span>] <span class="op">&gt;</span> df_marian[<span class="st">"bleu_base"</span>]]</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Number of samples improved:"</span>, <span class="bu">len</span>(df_improved_marian))</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Show the top 10 improved examples</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>df_improved_marian[[<span class="st">"sample_idx"</span>, <span class="st">"src_text"</span>, <span class="st">"reference_fr"</span>, <span class="st">"base_pred"</span>, <span class="st">"ft_pred"</span>, <span class="st">"bleu_base"</span>, <span class="st">"bleu_ft"</span>]].head(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="0d64c330" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>df_improved_marian <span class="op">=</span> df_marian[df_marian[<span class="st">"bleu_ft"</span>] <span class="op">&gt;</span> df_marian[<span class="st">"bleu_base"</span>]]</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Number of samples improved:"</span>, <span class="bu">len</span>(df_improved_marian))</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Show the top 10 improved examples</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>df_improved_marian[[<span class="st">"sample_idx"</span>, <span class="st">"src_text"</span>, <span class="st">"reference_fr"</span>, <span class="st">"base_pred"</span>, <span class="st">"ft_pred"</span>, <span class="st">"bleu_base"</span>, <span class="st">"bleu_ft"</span>]].head(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Number of samples improved: 166</code></pre>
 </div>
@@ -525,12 +567,12 @@ Number of samples improved: 3</code></pre>
 </div>
 </div>
 </div>
-<div id="a4d9bcb9" class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>df_perfect_marian <span class="op">=</span> df_marian[(df_marian[<span class="st">"bleu_ft"</span>] <span class="op">&gt;</span> df_marian[<span class="st">"bleu_base"</span>]) <span class="op">&amp;</span> (np.isclose(df_marian[<span class="st">"bleu_ft"</span>], <span class="fl">100.0</span>, atol<span class="op">=</span><span class="fl">1e-7</span>))]</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Number of samples improved:"</span>, <span class="bu">len</span>(df_perfect_marian))</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Show the top 10 improved examples</span></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>df_perfect_marian[[<span class="st">"sample_idx"</span>, <span class="st">"src_text"</span>, <span class="st">"reference_fr"</span>, <span class="st">"base_pred"</span>, <span class="st">"ft_pred"</span>, <span class="st">"bleu_base"</span>, <span class="st">"bleu_ft"</span>]].head(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="2c2bc071" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>df_perfect_marian <span class="op">=</span> df_marian[(df_marian[<span class="st">"bleu_ft"</span>] <span class="op">&gt;</span> df_marian[<span class="st">"bleu_base"</span>]) <span class="op">&amp;</span> (np.isclose(df_marian[<span class="st">"bleu_ft"</span>], <span class="fl">100.0</span>, atol<span class="op">=</span><span class="fl">1e-7</span>))]</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Number of samples improved:"</span>, <span class="bu">len</span>(df_perfect_marian))</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Show the top 10 improved examples</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>df_perfect_marian[[<span class="st">"sample_idx"</span>, <span class="st">"src_text"</span>, <span class="st">"reference_fr"</span>, <span class="st">"base_pred"</span>, <span class="st">"ft_pred"</span>, <span class="st">"bleu_base"</span>, <span class="st">"bleu_ft"</span>]].head(<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Number of samples improved: 9</code></pre>
 </div>
@@ -648,85 +690,85 @@ Number of samples improved: 3</code></pre>
 </div>
 </div>
 </div>
-<div id="13a63713" class="cell" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tempfile</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> zipfile</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datasets <span class="im">import</span> load_from_disk</span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>zip_path <span class="op">=</span> <span class="st">"small_validation_set.zip"</span></span>
-<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a temporary directory</span></span>
-<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>tmpdirname <span class="op">=</span> tempfile.mkdtemp()</span>
-<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> zipfile.ZipFile(zip_path, <span class="st">"r"</span>) <span class="im">as</span> zip_ref:</span>
-<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>    zip_ref.extractall(tmpdirname)</span>
-<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>dataset_path <span class="op">=</span> os.path.join(tmpdirname, <span class="st">"small_validation_set"</span>)</span>
-<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>small_validation_set <span class="op">=</span> load_from_disk(dataset_path)</span>
-<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Loaded small_validation_set with"</span>, <span class="bu">len</span>(small_validation_set), <span class="st">"samples."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="fd4a5193" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> tempfile</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> zipfile</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datasets <span class="im">import</span> load_from_disk</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>zip_path <span class="op">=</span> <span class="st">"small_validation_set.zip"</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a temporary directory</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>tmpdirname <span class="op">=</span> tempfile.mkdtemp()</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> zipfile.ZipFile(zip_path, <span class="st">"r"</span>) <span class="im">as</span> zip_ref:</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>    zip_ref.extractall(tmpdirname)</span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>dataset_path <span class="op">=</span> os.path.join(tmpdirname, <span class="st">"small_validation_set"</span>)</span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>small_validation_set <span class="op">=</span> load_from_disk(dataset_path)</span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Loaded small_validation_set with"</span>, <span class="bu">len</span>(small_validation_set), <span class="st">"samples."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Loaded small_validation_set with 100 samples.</code></pre>
 </div>
 </div>
-<div id="8f0b12dd" class="cell" data-execution_count="9">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> difflib</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> Audio, display, HTML</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> highlight_diff(ref, pred):</span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
-<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="co">    Use difflib.HtmlDiff to highlight token-level differences</span></span>
-<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="co">    side by side in an HTML table.</span></span>
-<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
-<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>    ref_tokens <span class="op">=</span> ref.split()</span>
-<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>    pred_tokens <span class="op">=</span> pred.split()</span>
-<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>    diff_html <span class="op">=</span> difflib.HtmlDiff().make_table(</span>
-<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>        ref_tokens,</span>
-<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>        pred_tokens,</span>
-<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>        fromdesc<span class="op">=</span><span class="st">'Reference'</span>,</span>
-<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>        todesc<span class="op">=</span><span class="st">'Prediction'</span>,</span>
-<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>        context<span class="op">=</span><span class="va">True</span>,</span>
-<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a>        numlines<span class="op">=</span><span class="dv">1</span></span>
-<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> diff_html</span>
-<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> show_whisper_sample(df, dataset, row_idx<span class="op">=</span><span class="dv">0</span>):</span>
-<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
-<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a><span class="co">    Display audio playback and text differences for a single row in `df`.</span></span>
-<span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a><span class="co">    `dataset` is your loaded small_validation_set (a Dataset object).</span></span>
-<span id="cb17-25"><a href="#cb17-25" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
-<span id="cb17-26"><a href="#cb17-26" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> row_idx <span class="op">&gt;=</span> <span class="bu">len</span>(df):</span>
-<span id="cb17-27"><a href="#cb17-27" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Row index out of range."</span>)</span>
-<span id="cb17-28"><a href="#cb17-28" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span></span>
-<span id="cb17-29"><a href="#cb17-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-30"><a href="#cb17-30" aria-hidden="true" tabindex="-1"></a>    row <span class="op">=</span> df.iloc[row_idx]</span>
-<span id="cb17-31"><a href="#cb17-31" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb17-32"><a href="#cb17-32" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Convert to a pure Python int, since HF Datasets won't accept np.int64</span></span>
-<span id="cb17-33"><a href="#cb17-33" aria-hidden="true" tabindex="-1"></a>    sample_idx <span class="op">=</span> <span class="bu">int</span>(row[<span class="st">"sample_idx"</span>])</span>
-<span id="cb17-34"><a href="#cb17-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-35"><a href="#cb17-35" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Retrieve the audio from the dataset</span></span>
-<span id="cb17-36"><a href="#cb17-36" aria-hidden="true" tabindex="-1"></a>    sample <span class="op">=</span> dataset[sample_idx]</span>
-<span id="cb17-37"><a href="#cb17-37" aria-hidden="true" tabindex="-1"></a>    audio_data <span class="op">=</span> sample[<span class="st">"audio"</span>][<span class="st">"array"</span>]</span>
-<span id="cb17-38"><a href="#cb17-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-39"><a href="#cb17-39" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Playback the audio (assuming 16k sample rate)</span></span>
-<span id="cb17-40"><a href="#cb17-40" aria-hidden="true" tabindex="-1"></a>    display(Audio(audio_data, rate<span class="op">=</span><span class="dv">16000</span>))</span>
-<span id="cb17-41"><a href="#cb17-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-42"><a href="#cb17-42" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Sample index: </span><span class="sc">{</span>sample_idx<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb17-43"><a href="#cb17-43" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Reference:"</span>, row[<span class="st">"reference"</span>])</span>
-<span id="cb17-44"><a href="#cb17-44" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Base Prediction:"</span>, row[<span class="st">"base_pred"</span>])</span>
-<span id="cb17-45"><a href="#cb17-45" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Fine-tuned Prediction:"</span>, row[<span class="st">"ft_pred"</span>])</span>
-<span id="cb17-46"><a href="#cb17-46" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"CER Base: </span><span class="sc">{</span>row[<span class="st">'cer_base'</span>]<span class="sc">:.3f}</span><span class="ss">, CER FT: </span><span class="sc">{</span>row[<span class="st">'cer_ft'</span>]<span class="sc">:.3f}</span><span class="ss">"</span>)</span>
-<span id="cb17-47"><a href="#cb17-47" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"WER Base: </span><span class="sc">{</span>row[<span class="st">'wer_base'</span>]<span class="sc">:.3f}</span><span class="ss">, WER FT: </span><span class="sc">{</span>row[<span class="st">'wer_ft'</span>]<span class="sc">:.3f}</span><span class="ss">"</span>)</span>
-<span id="cb17-48"><a href="#cb17-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-49"><a href="#cb17-49" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Highlight diffs side-by-side</span></span>
-<span id="cb17-50"><a href="#cb17-50" aria-hidden="true" tabindex="-1"></a>    base_diff_html <span class="op">=</span> highlight_diff(row[<span class="st">"reference"</span>], row[<span class="st">"base_pred"</span>])</span>
-<span id="cb17-51"><a href="#cb17-51" aria-hidden="true" tabindex="-1"></a>    ft_diff_html   <span class="op">=</span> highlight_diff(row[<span class="st">"reference"</span>], row[<span class="st">"ft_pred"</span>])</span>
-<span id="cb17-52"><a href="#cb17-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-53"><a href="#cb17-53" aria-hidden="true" tabindex="-1"></a>    display(HTML(<span class="st">"&lt;h4&gt;Reference vs. Base Prediction&lt;/h4&gt;"</span> <span class="op">+</span> base_diff_html))</span>
-<span id="cb17-54"><a href="#cb17-54" aria-hidden="true" tabindex="-1"></a>    display(HTML(<span class="st">"&lt;h4&gt;Reference vs. Fine-Tuned Prediction&lt;/h4&gt;"</span> <span class="op">+</span> ft_diff_html))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="44d2b9c8" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> difflib</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> Audio, display, HTML</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> highlight_diff(ref, pred):</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="co">    Use difflib.HtmlDiff to highlight token-level differences</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="co">    side by side in an HTML table.</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>    ref_tokens <span class="op">=</span> ref.split()</span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>    pred_tokens <span class="op">=</span> pred.split()</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>    diff_html <span class="op">=</span> difflib.HtmlDiff().make_table(</span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>        ref_tokens,</span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>        pred_tokens,</span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>        fromdesc<span class="op">=</span><span class="st">'Reference'</span>,</span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>        todesc<span class="op">=</span><span class="st">'Prediction'</span>,</span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a>        context<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a>        numlines<span class="op">=</span><span class="dv">1</span></span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> diff_html</span>
+<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> show_whisper_sample(df, dataset, row_idx<span class="op">=</span><span class="dv">0</span>):</span>
+<span id="cb16-22"><a href="#cb16-22" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb16-23"><a href="#cb16-23" aria-hidden="true" tabindex="-1"></a><span class="co">    Display audio playback and text differences for a single row in `df`.</span></span>
+<span id="cb16-24"><a href="#cb16-24" aria-hidden="true" tabindex="-1"></a><span class="co">    `dataset` is your loaded small_validation_set (a Dataset object).</span></span>
+<span id="cb16-25"><a href="#cb16-25" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb16-26"><a href="#cb16-26" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> row_idx <span class="op">&gt;=</span> <span class="bu">len</span>(df):</span>
+<span id="cb16-27"><a href="#cb16-27" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Row index out of range."</span>)</span>
+<span id="cb16-28"><a href="#cb16-28" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span></span>
+<span id="cb16-29"><a href="#cb16-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-30"><a href="#cb16-30" aria-hidden="true" tabindex="-1"></a>    row <span class="op">=</span> df.iloc[row_idx]</span>
+<span id="cb16-31"><a href="#cb16-31" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb16-32"><a href="#cb16-32" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Convert to a pure Python int, since HF Datasets won't accept np.int64</span></span>
+<span id="cb16-33"><a href="#cb16-33" aria-hidden="true" tabindex="-1"></a>    sample_idx <span class="op">=</span> <span class="bu">int</span>(row[<span class="st">"sample_idx"</span>])</span>
+<span id="cb16-34"><a href="#cb16-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-35"><a href="#cb16-35" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Retrieve the audio from the dataset</span></span>
+<span id="cb16-36"><a href="#cb16-36" aria-hidden="true" tabindex="-1"></a>    sample <span class="op">=</span> dataset[sample_idx]</span>
+<span id="cb16-37"><a href="#cb16-37" aria-hidden="true" tabindex="-1"></a>    audio_data <span class="op">=</span> sample[<span class="st">"audio"</span>][<span class="st">"array"</span>]</span>
+<span id="cb16-38"><a href="#cb16-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-39"><a href="#cb16-39" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Playback the audio (assuming 16k sample rate)</span></span>
+<span id="cb16-40"><a href="#cb16-40" aria-hidden="true" tabindex="-1"></a>    display(Audio(audio_data, rate<span class="op">=</span><span class="dv">16000</span>))</span>
+<span id="cb16-41"><a href="#cb16-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-42"><a href="#cb16-42" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Sample index: </span><span class="sc">{</span>sample_idx<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb16-43"><a href="#cb16-43" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Reference:"</span>, row[<span class="st">"reference"</span>])</span>
+<span id="cb16-44"><a href="#cb16-44" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Base Prediction:"</span>, row[<span class="st">"base_pred"</span>])</span>
+<span id="cb16-45"><a href="#cb16-45" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Fine-tuned Prediction:"</span>, row[<span class="st">"ft_pred"</span>])</span>
+<span id="cb16-46"><a href="#cb16-46" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"CER Base: </span><span class="sc">{</span>row[<span class="st">'cer_base'</span>]<span class="sc">:.3f}</span><span class="ss">, CER FT: </span><span class="sc">{</span>row[<span class="st">'cer_ft'</span>]<span class="sc">:.3f}</span><span class="ss">"</span>)</span>
+<span id="cb16-47"><a href="#cb16-47" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"WER Base: </span><span class="sc">{</span>row[<span class="st">'wer_base'</span>]<span class="sc">:.3f}</span><span class="ss">, WER FT: </span><span class="sc">{</span>row[<span class="st">'wer_ft'</span>]<span class="sc">:.3f}</span><span class="ss">"</span>)</span>
+<span id="cb16-48"><a href="#cb16-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-49"><a href="#cb16-49" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Highlight diffs side-by-side</span></span>
+<span id="cb16-50"><a href="#cb16-50" aria-hidden="true" tabindex="-1"></a>    base_diff_html <span class="op">=</span> highlight_diff(row[<span class="st">"reference"</span>], row[<span class="st">"base_pred"</span>])</span>
+<span id="cb16-51"><a href="#cb16-51" aria-hidden="true" tabindex="-1"></a>    ft_diff_html   <span class="op">=</span> highlight_diff(row[<span class="st">"reference"</span>], row[<span class="st">"ft_pred"</span>])</span>
+<span id="cb16-52"><a href="#cb16-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-53"><a href="#cb16-53" aria-hidden="true" tabindex="-1"></a>    display(HTML(<span class="st">"&lt;h4&gt;Reference vs. Base Prediction&lt;/h4&gt;"</span> <span class="op">+</span> base_diff_html))</span>
+<span id="cb16-54"><a href="#cb16-54" aria-hidden="true" tabindex="-1"></a>    display(HTML(<span class="st">"&lt;h4&gt;Reference vs. Fine-Tuned Prediction&lt;/h4&gt;"</span> <span class="op">+</span> ft_diff_html))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="9eb168d6" class="cell" data-execution_count="10">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>df_perfect_whisper_wer</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cd9db36b" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>df_perfect_whisper_wer</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="10">
 <div>
 
@@ -789,9 +831,9 @@ Number of samples improved: 3</code></pre>
 </div>
 </div>
 </div>
-<div id="03a0b3c8" class="cell" data-execution_count="11">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>,<span class="bu">len</span>(df_perfect_whisper_wer)):</span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>    show_whisper_sample(df_perfect_whisper_wer, small_validation_set, row_idx<span class="op">=</span>i)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="c33539d5" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>,<span class="bu">len</span>(df_perfect_whisper_wer)):</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>    show_whisper_sample(df_perfect_whisper_wer, small_validation_set, row_idx<span class="op">=</span>i)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 
                 <audio controls="controls">
@@ -1417,44 +1459,44 @@ WER Base: 0.147, WER FT: 0.000</code></pre>
 </table>
 </div>
 </div>
-<div id="fb1f2062" class="cell" data-execution_count="12">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> highlight_diff_tokens(s1, s2):</span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="co">    Return an HTML diff table showing token-level differences between s1 and s2.</span></span>
-<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
-<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>    tokens1 <span class="op">=</span> s1.split()</span>
-<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>    tokens2 <span class="op">=</span> s2.split()</span>
-<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>    diff_html <span class="op">=</span> difflib.HtmlDiff().make_table(</span>
-<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>        tokens1, tokens2,</span>
-<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>        fromdesc<span class="op">=</span><span class="st">'String 1'</span>,</span>
-<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>        todesc<span class="op">=</span><span class="st">'String 2'</span>,</span>
-<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>        context<span class="op">=</span><span class="va">True</span>,</span>
-<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>        numlines<span class="op">=</span><span class="dv">1</span></span>
-<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> diff_html</span>
-<span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-16"><a href="#cb23-16" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> show_marian_sample(df, row_idx<span class="op">=</span><span class="dv">0</span>):</span>
-<span id="cb23-17"><a href="#cb23-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> row_idx <span class="op">&gt;=</span> <span class="bu">len</span>(df):</span>
-<span id="cb23-18"><a href="#cb23-18" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Row index out of range."</span>)</span>
-<span id="cb23-19"><a href="#cb23-19" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span></span>
-<span id="cb23-20"><a href="#cb23-20" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb23-21"><a href="#cb23-21" aria-hidden="true" tabindex="-1"></a>    row <span class="op">=</span> df.iloc[row_idx]</span>
-<span id="cb23-22"><a href="#cb23-22" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Sample index: </span><span class="sc">{</span>row[<span class="st">'sample_idx'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb23-23"><a href="#cb23-23" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Source (EN)     :"</span>, row[<span class="st">"src_text"</span>])</span>
-<span id="cb23-24"><a href="#cb23-24" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Reference (FR)  :"</span>, row[<span class="st">"reference_fr"</span>])</span>
-<span id="cb23-25"><a href="#cb23-25" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Base Prediction :"</span>, row[<span class="st">"base_pred"</span>])</span>
-<span id="cb23-26"><a href="#cb23-26" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Fine-tuned Pred :"</span>, row[<span class="st">"ft_pred"</span>])</span>
-<span id="cb23-27"><a href="#cb23-27" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"BLEU Base: </span><span class="sc">{</span>row[<span class="st">'bleu_base'</span>]<span class="sc">:.2f}</span><span class="ss">, BLEU FT: </span><span class="sc">{</span>row[<span class="st">'bleu_ft'</span>]<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
-<span id="cb23-28"><a href="#cb23-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-29"><a href="#cb23-29" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Compare reference vs base</span></span>
-<span id="cb23-30"><a href="#cb23-30" aria-hidden="true" tabindex="-1"></a>    base_diff_html <span class="op">=</span> highlight_diff_tokens(row[<span class="st">"reference_fr"</span>], row[<span class="st">"base_pred"</span>])</span>
-<span id="cb23-31"><a href="#cb23-31" aria-hidden="true" tabindex="-1"></a>    ft_diff_html   <span class="op">=</span> highlight_diff_tokens(row[<span class="st">"reference_fr"</span>], row[<span class="st">"ft_pred"</span>])</span>
-<span id="cb23-32"><a href="#cb23-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-33"><a href="#cb23-33" aria-hidden="true" tabindex="-1"></a>    display(HTML(<span class="st">"&lt;h4&gt;Reference vs. Base Prediction&lt;/h4&gt;"</span> <span class="op">+</span> base_diff_html))</span>
-<span id="cb23-34"><a href="#cb23-34" aria-hidden="true" tabindex="-1"></a>    display(HTML(<span class="st">"&lt;h4&gt;Reference vs. Fine-Tuned Prediction&lt;/h4&gt;"</span> <span class="op">+</span> ft_diff_html))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="fca922c8" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> highlight_diff_tokens(s1, s2):</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="co">    Return an HTML diff table showing token-level differences between s1 and s2.</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>    tokens1 <span class="op">=</span> s1.split()</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>    tokens2 <span class="op">=</span> s2.split()</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>    diff_html <span class="op">=</span> difflib.HtmlDiff().make_table(</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>        tokens1, tokens2,</span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>        fromdesc<span class="op">=</span><span class="st">'String 1'</span>,</span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>        todesc<span class="op">=</span><span class="st">'String 2'</span>,</span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>        context<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>        numlines<span class="op">=</span><span class="dv">1</span></span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> diff_html</span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-16"><a href="#cb22-16" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> show_marian_sample(df, row_idx<span class="op">=</span><span class="dv">0</span>):</span>
+<span id="cb22-17"><a href="#cb22-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> row_idx <span class="op">&gt;=</span> <span class="bu">len</span>(df):</span>
+<span id="cb22-18"><a href="#cb22-18" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Row index out of range."</span>)</span>
+<span id="cb22-19"><a href="#cb22-19" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span></span>
+<span id="cb22-20"><a href="#cb22-20" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb22-21"><a href="#cb22-21" aria-hidden="true" tabindex="-1"></a>    row <span class="op">=</span> df.iloc[row_idx]</span>
+<span id="cb22-22"><a href="#cb22-22" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"Sample index: </span><span class="sc">{</span>row[<span class="st">'sample_idx'</span>]<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb22-23"><a href="#cb22-23" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Source (EN)     :"</span>, row[<span class="st">"src_text"</span>])</span>
+<span id="cb22-24"><a href="#cb22-24" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Reference (FR)  :"</span>, row[<span class="st">"reference_fr"</span>])</span>
+<span id="cb22-25"><a href="#cb22-25" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Base Prediction :"</span>, row[<span class="st">"base_pred"</span>])</span>
+<span id="cb22-26"><a href="#cb22-26" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Fine-tuned Pred :"</span>, row[<span class="st">"ft_pred"</span>])</span>
+<span id="cb22-27"><a href="#cb22-27" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"BLEU Base: </span><span class="sc">{</span>row[<span class="st">'bleu_base'</span>]<span class="sc">:.2f}</span><span class="ss">, BLEU FT: </span><span class="sc">{</span>row[<span class="st">'bleu_ft'</span>]<span class="sc">:.2f}</span><span class="ss">"</span>)</span>
+<span id="cb22-28"><a href="#cb22-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-29"><a href="#cb22-29" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Compare reference vs base</span></span>
+<span id="cb22-30"><a href="#cb22-30" aria-hidden="true" tabindex="-1"></a>    base_diff_html <span class="op">=</span> highlight_diff_tokens(row[<span class="st">"reference_fr"</span>], row[<span class="st">"base_pred"</span>])</span>
+<span id="cb22-31"><a href="#cb22-31" aria-hidden="true" tabindex="-1"></a>    ft_diff_html   <span class="op">=</span> highlight_diff_tokens(row[<span class="st">"reference_fr"</span>], row[<span class="st">"ft_pred"</span>])</span>
+<span id="cb22-32"><a href="#cb22-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-33"><a href="#cb22-33" aria-hidden="true" tabindex="-1"></a>    display(HTML(<span class="st">"&lt;h4&gt;Reference vs. Base Prediction&lt;/h4&gt;"</span> <span class="op">+</span> base_diff_html))</span>
+<span id="cb22-34"><a href="#cb22-34" aria-hidden="true" tabindex="-1"></a>    display(HTML(<span class="st">"&lt;h4&gt;Reference vs. Fine-Tuned Prediction&lt;/h4&gt;"</span> <span class="op">+</span> ft_diff_html))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="bec51c01" class="cell" data-execution_count="13">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>show_marian_sample(df_perfect_marian, row_idx<span class="op">=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="5a0a4d67" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>show_marian_sample(df_perfect_marian, row_idx<span class="op">=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Sample index: 19
 Source (EN)     : If we are to escape from France, we must have faith!
@@ -1557,8 +1599,9 @@ BLEU Base: 69.98, BLEU FT: 100.00</code></pre>
 </div>
 </div>
 
-</main>
-<!-- /main column -->
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -1649,7 +1692,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/srinivassundar98\.github\.io\/Preserving-Speaker-Identity-In-Multilingual-Translation\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
