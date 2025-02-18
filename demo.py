@@ -5,6 +5,7 @@ from transformers import MarianMTModel, MarianTokenizer
 from TTS.api import TTS
 import tempfile
 import os
+os.environ["COQUI_TTS_LICENSE"] = "non-commercial"  # or "commercial" if you have a license
 
 # ---------------------------
 # Core Pipeline Functions
