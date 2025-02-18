@@ -1,13 +1,13 @@
+import os
+os.environ["COQUI_TTS_LICENSE"] = "non-commercial"  # or "commercial" if you have a license
 import streamlit as st
 import time
 import whisper
 from transformers.models.marian.modeling_marian import MarianMTModel
 from transformers.models.marian.tokenization_marian import MarianTokenizer
-
 from TTS.api import TTS
 import tempfile
-import os
-os.environ["COQUI_TTS_LICENSE"] = "non-commercial"  # or "commercial" if you have a license
+
 
 # ---------------------------
 # Core Pipeline Functions
