@@ -17,7 +17,7 @@ def load_models(target_language="fr"):
     """
     Load STT, NMT, and TTS models dynamically based on the target language.
     """
-    stt_model = whisper.load_model("base")
+    stt_model = whisper.load_model("tiny")
     nmt_model_name = f"Helsinki-NLP/opus-mt-en-{target_language}"
     nmt_tokenizer = MarianTokenizer.from_pretrained(nmt_model_name)
     nmt_model = MarianMTModel.from_pretrained(nmt_model_name)
