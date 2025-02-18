@@ -1,5 +1,6 @@
 import os
-os.environ["COQUI_TTS_LICENSE"] = "non-commercial"  # or "commercial" if you have a license
+os.environ["COQUI_TOS_AGREED"] = "1"
+#os.environ["COQUI_TTS_LICENSE"] = "non-commercial"  # or "commercial" if you have a license
 import streamlit as st
 import time
 import whisper
