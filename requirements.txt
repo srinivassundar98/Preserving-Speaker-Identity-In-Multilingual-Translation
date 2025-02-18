@@ -6,3 +6,5 @@ openai==0.28.0
 transformers==4.46.3
 tensorflow
 keras
+sentencepiece
+
