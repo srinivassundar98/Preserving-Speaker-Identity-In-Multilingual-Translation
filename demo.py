@@ -1,7 +1,9 @@
 import streamlit as st
 import time
 import whisper
-from transformers import MarianMTModel, MarianTokenizer
+from transformers.models.marian.modeling_marian import MarianMTModel
+from transformers.models.marian.tokenization_marian import MarianTokenizer
+
 from TTS.api import TTS
 import tempfile
 import os
